@@ -9,17 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var bouton: UIButton!
+    
+    var lanceur: Lanceur!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        bouton.layer.cornerRadius = 25
+        lanceur = Lanceur(layer: self)
+        lanceur.setup(frame: view.frame)
+        view.layer.addSublayer(lanceur)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func boutonAction(_ sender: Any) {
+        lanceur.lancerConfettis()
+        bouton.isEnabled = false
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (t) in
+            self.lanceur.emitterCells?.removeAll()
+            self.bouton.isEnabled = true
+        }
     }
-
+    
 
 }
 

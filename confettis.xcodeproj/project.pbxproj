@@ -12,6 +12,8 @@
 		4C94092521299F4D009F0916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C94092321299F4D009F0916 /* Main.storyboard */; };
 		4C94092721299F4E009F0916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C94092621299F4E009F0916 /* Assets.xcassets */; };
 		4C94092A21299F4E009F0916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C94092821299F4E009F0916 /* LaunchScreen.storyboard */; };
+		4C9409322129A14E009F0916 /* Lanceur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9409312129A14E009F0916 /* Lanceur.swift */; };
+		4C9409342129A303009F0916 /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9409332129A303009F0916 /* Confetti.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4C94092621299F4E009F0916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C94092921299F4E009F0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C94092B21299F4E009F0916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9409312129A14E009F0916 /* Lanceur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lanceur.swift; sourceTree = "<group>"; };
+		4C9409332129A303009F0916 /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4C94092621299F4E009F0916 /* Assets.xcassets */,
 				4C94092821299F4E009F0916 /* LaunchScreen.storyboard */,
 				4C94092B21299F4E009F0916 /* Info.plist */,
+				4C9409312129A14E009F0916 /* Lanceur.swift */,
+				4C9409332129A303009F0916 /* Confetti.swift */,
 			);
 			path = confettis;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C94092221299F4D009F0916 /* ViewController.swift in Sources */,
+				4C9409342129A303009F0916 /* Confetti.swift in Sources */,
 				4C94092021299F4D009F0916 /* AppDelegate.swift in Sources */,
+				4C9409322129A14E009F0916 /* Lanceur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
